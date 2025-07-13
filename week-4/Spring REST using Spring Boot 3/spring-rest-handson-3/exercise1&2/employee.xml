@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Skills -->
+    <bean id="skill1" class="com.cognizant.springlearn.model.Skill">
+        <property name="id" value="1"/>
+        <property name="name" value="HTML"/>
+    </bean>
+
+    <bean id="skill2" class="com.cognizant.springlearn.model.Skill">
+        <property name="id" value="2"/>
+        <property name="name" value="CSS"/>
+    </bean>
+
+    <!-- Departments -->
+    <bean id="dept1" class="com.cognizant.springlearn.model.Department">
+        <property name="id" value="1"/>
+        <property name="name" value="HR"/>
+    </bean>
+
+    <bean id="dept2" class="com.cognizant.springlearn.model.Department">
+        <property name="id" value="2"/>
+        <property name="name" value="Development"/>
+    </bean>
+
+    <!-- Employees -->
+    <bean id="employee1" class="com.cognizant.springlearn.model.Employee">
+        <property name="id" value="1"/>
+        <property name="name" value="John"/>
+        <property name="salary" value="50000"/>
+        <property name="permanent" value="true"/>
+        <!-- FIXED: directly provide string date -->
+        <property name="dateOfBirth" value="01/01/1990"/>
+        <property name="department" ref="dept1"/>
+        <property name="skillList">
+            <list>
+                <ref bean="skill1"/>
+                <ref bean="skill2"/>
+            </list>
+        </property>
+    </bean>
+
+    <!-- Employee List -->
+    <bean id="employeeList" class="java.util.ArrayList">
+        <constructor-arg>
+            <list>
+                <ref bean="employee1"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+</beans>
