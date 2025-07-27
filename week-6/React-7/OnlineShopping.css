@@ -1,0 +1,27 @@
+/* src/OnlineShopping.css */
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.title {
+  color: green;
+  font-weight: bold;
+}
+
+.item-table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 2px solid gray;
+}
+
+.item-table th,
+.item-table td {
+  border: 1px solid lightgray;
+  padding: 10px 20px;
+  color: teal;
+}
+
+.item-table th {
+  color: green;
+}

@@ -1,0 +1,44 @@
+.score-card {
+  margin: 20px auto;
+  padding: 20px;
+  width: 400px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px gray;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.score-card h2 {
+  text-align: center;
+  color: #333;
+}
+
+.score-card input {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.score-card button {
+  display: block;
+  margin: 15px auto;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.score-card button:hover {
+  background-color: #0056b3;
+}
+
+.result {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}

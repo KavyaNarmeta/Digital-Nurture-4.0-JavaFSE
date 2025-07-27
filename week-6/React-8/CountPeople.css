@@ -1,0 +1,25 @@
+/* src/CountPeople.css */
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  font-family: Arial, sans-serif;
+}
+
+.block {
+  text-align: center;
+}
+
+button {
+  background-color: lightgreen;
+  border: 1px solid green;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+span {
+  font-size: 18px;
+  color: green;
+}
