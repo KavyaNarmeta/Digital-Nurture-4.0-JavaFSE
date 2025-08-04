@@ -1,0 +1,24 @@
+.container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  margin-bottom: 40px;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  margin: 20px 0;
+}
+
+.rent-red {
+  color: red;
+  font-weight: bold;
+}
+
+.rent-green {
+  color: green;
+  font-weight: bold;
+}
